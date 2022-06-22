@@ -31,7 +31,11 @@
     "vue-simple-portal": "^1.0.3",
     "vuejs-paginate": "^2.1.0",
     "vuelidate": "^0.7.7",
-    "vuetable-3": "^3.4.1"
+    "vuetable-3": "^3.4.1",
+    "@vue/cli-overlay": "^5.0.6",
+    "@vue/cli-plugin-router": "^5.0.6",
+    "@vue/cli-plugin-vuex": "^5.0.6",
+    "@vue/cli-shared-utils": "^5.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
