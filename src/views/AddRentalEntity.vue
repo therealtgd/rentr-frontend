@@ -703,8 +703,9 @@ export default {
                 headers: {
                     Authorization: 'Bearer ' + window.localStorage.getItem("jwt"),
                 },
-            }).then(function(response) {
-                console.log(response);
+            }).then(function() {
+                alert("Successfully added")
+                this.$router.push({name: 'my-listings'})
                 // notify that awaiting accept
             }).catch(function(error) {
                 console.log(error);
