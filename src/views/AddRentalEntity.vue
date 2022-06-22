@@ -629,9 +629,9 @@ export default {
                     Authorization: 'Bearer ' + window.localStorage.getItem("jwt"),
                 },
             })
-            .then(function(response) {
-                console.log(response);
-                // notify that awaiting accept
+            .then(function() {
+                alert("Successfully added")
+                this.$router.push({name: 'my-listings'})
             })
             .catch(function(error) {
                 console.log(error);
@@ -703,9 +703,8 @@ export default {
                 headers: {
                     Authorization: 'Bearer ' + window.localStorage.getItem("jwt"),
                 },
-            }).then(function() {
-                alert("Successfully added")
-                this.$router.push({name: 'my-listings'})
+            }).then(function(response) {
+                console.log(response);
                 // notify that awaiting accept
             }).catch(function(error) {
                 console.log(error);
