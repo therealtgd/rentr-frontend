@@ -111,7 +111,6 @@ export default {
     data() {
         return {
             firstName: '',
-            phoneTmp: '',
             lastName: '',
             email: '',
             phone: null,
@@ -174,9 +173,6 @@ export default {
                     console.log(error);
                     alert("Email already taken");
                 })
-        },
-        updatePhone(event){
-            this.phone = event
         },
         isFocused(field) {
             return this.infocus[field]
